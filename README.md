@@ -29,12 +29,12 @@ See the full course here: https://devsearch-u.herokuapp.com
 * Django REST Framework
 
 # Home Page
-<img src="static/images/main.jpg">
+<img src="static/images/mains.jpg">
 
 # Projects Page
 
-<img src="static/images/project.jpg">
+<img src="static/images/projects.jpg">
 
 # User Inbox
-<img src="static/images/inbox.jpg">  
+<img src="static/images/inboxs.jpg">  
 
