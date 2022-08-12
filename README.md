@@ -5,7 +5,7 @@ See the full course here: https://devsearch-u.herokuapp.com
 
 
 # Installation
-* 1 - clone repo https://github.com/django-dev-uz/dev_search.git
+* 1 - clone repo https://github.com/magic-encode/Dev-Search.git
 * 2 - create a virtual environment and activate
 *  - pip install virtualenv
 *  - virtualenv envname
