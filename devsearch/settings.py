@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env.str("SECRET_KEY")
 
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['.herokuapp.com', 'localhost', '127.0.0.1']
 
@@ -158,7 +158,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 DEFAULT_FROM_EMAIL = 'Abdullajon Uzdeveloper'
 
-EMAIL_BACKEND = env.str('EMAIL_BACKEND')
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = env.str('EMAIL_HOST')
 EMAIL_PORT = env.int("EMAIL_PORT")
 EMAIL_USE_TLS = env.bool('EMAIL_USE_TLS', default=True)
