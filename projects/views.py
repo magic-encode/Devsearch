@@ -5,7 +5,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
 
-from .models import  Tag
+from .models import Tag
 from .models import Project
 
 from .forms import ReviewForm
@@ -22,7 +22,7 @@ def projects(request):
     context = {'projects': projects,
                'search_query': search_query, 'custom_range': custom_range}
     return render(request, 'projects/projects.html', context)
-    
+
 
 def project(request, pk):
     projectObj = Project.objects.get(id=pk)
