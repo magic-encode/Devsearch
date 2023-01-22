@@ -15,7 +15,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '207.154.208.141', '.3003.uz', '3003.uz']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '207.154.208.141', '.3003.uz', '3003.uz', '207.154.208.141.3003.uz']
 
 
 # Application definition
