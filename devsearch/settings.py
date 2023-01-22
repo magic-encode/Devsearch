@@ -13,9 +13,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env.str("SECRET_KEY")
 
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '207.154.208.141', '.3003.uz', '3003.uz']
 
 
 # Application definition
@@ -112,8 +112,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'devsearch.wsgi.application'
 
 
-
-
 DATABASES = {
     'default': {
         'ENGINE': env.str('DB_ENGINE'),
@@ -124,10 +122,6 @@ DATABASES = {
         'PORT': env.int('DB_PORT'),
     }
 }
-
-
-
-
 
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -144,7 +138,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 
 LANGUAGE_CODE = 'en-us'
@@ -177,8 +170,8 @@ STATICFILES_DIRS = [
 
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media') 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
