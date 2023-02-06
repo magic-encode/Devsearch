@@ -2,9 +2,20 @@
 {% load static %}
 {% block content %}
 
+<style>
+    #la input
+    {
+        min-width: 24rem;
+        width: 100%;
+        padding: 1.2rem 1.5rem;
+        border-radius: 0.5rem;
+        border: 2px solid var(--color-light);
+        transition: all 0.3s ease-in-out;
+        background-color: var(--color-bg);   
+    }
+</style>
 
 {% if page == 'register' %}
-
 <div class="auth">
     <div class="card">
         <div class="auth__header text-center">
@@ -21,11 +32,7 @@
             {% for field in form %}
             <div class="form__field">
                 <label for="formInput#text">{{field.label}}</label>
-                {{field}}
-
-                <!-- {% if field.help_text %}
-                <small>{{field.help_text}}</small>
-                {% endif %} -->
+               <span id="la"> {{field}} </span>
 
                 {% for error in field.errors %}
                 <p style="color: red;">{{error}}</p>
